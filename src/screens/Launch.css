@@ -1,0 +1,45 @@
+.launch-screen {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+
+.launch-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-base);
+}
+
+.loop-icon {
+  width: 64px;
+  height: 64px;
+  color: var(--color-black);
+  animation: rotate 2s linear;
+}
+
+.loop-logo {
+  font-family: var(--font-family);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.loop-tagline {
+  position: absolute;
+  bottom: var(--space-3xl);
+  width: 100%;
+  text-align: center;
+  color: var(--color-mist-gray);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  opacity: 0;
+  animation: fadeIn 0.5s ease 1.5s forwards;
+}
